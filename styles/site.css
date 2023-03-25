@@ -1,0 +1,16 @@
+.card-hover {
+    transition-duration: 500ms;
+}
+
+.card-hover .card-title {
+    transition-duration: 500ms;
+}
+
+.card-hover:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.card-hover:hover .card-title {
+    text-decoration: underline;
+}

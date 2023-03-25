@@ -1,146 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.108.0">
-  <title>Album example · Bootstrap v5.3</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-
-
-
-
-
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .box {
-      border: 5px solid rgb(255, 255, 255);
-      height: 400px;
-      width: 500px;
-    }
-  </style>
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kruglov Alexandr, German Grachev and Bootstrap contributors">
+    <link rel="icon" href="favicon.ico">
+    <title>Шпаргалка для пилота</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styles/site.css" rel="stylesheet">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <div class=" mb-2 bg-primary text-white">
-      <div class="">
-        <div class="container">
-          <div class="mx-auto" style="width: 70px;">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-              <img src="./img/68380.png" width="90" height="90" fill="currentColor" class="bi bi-airplane"
-                viewBox="0 0 16 16">
-              <path
-                d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
-              </img>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </header>
-
-  <main>
-
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Шпаргалка пилота</h1>
-          <p class="lead text-muted">Этот сайт поможет тебе в освоении авиационоого мира. В нем описана вся нажная на
-            начальном этапе теория. Здесь ты сможешь нати интересную статью про выполнение полетов на тренажере Cessna
-            172sp, пошаговую инструкцию, которая поможет тебе в освоении мира IVAO и многое другое....</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card" style="height: 35rem;">
-            <div class="card-body">
-              <img src="./img/постр 2.1.jpg" class="card-img-top" alt="...">
-              <h5 class="card-title">Готовимся лететь</h5>
-              <p class="card-text">Все про тренажер, о том как на нем леать, как подготовится к полету и как
-                разговаривать с дисетчерами</p>
-              <a href="./pages/GettingReadyToFly.html" class="btn btn-primary">Перейти к контенту</a>
+    <header class="my-4 bg-primary">
+        <div class="container py-4">
+            <div class="d-flex align-items-center">
+                <img height="50" src="./img/logo_white.png" />
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mx-3 my-1 fw-bold fs-4">
+                        <li class="text-light breadcrumb-item active" aria-current="page">Главная</li>
+                    </ol>
+                </nav>
             </div>
-          </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card" style="height: 35rem;">
-            <div class="card-body">
-              <img src="./img/003_006.jpg" class="card-img-top" alt="...">
-              <h5 class="card-title">Важная теория</h5>
-              <p class="card-text">Вся теоретическая часть простым языком и нужные шапаргалки, которое очень тебе
-                помогут</p>
-              <a href="#" class="btn btn-primary">Перейти к контенту</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    </header>
 
+    <div class="container py-4">
+        <div class="p-3 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-2">
+                <div class="d-flex align-items-end">
+                    <img class="mx-2" src="./img/68380.png" height="75"></img>
+                    <h1 class="display-5 fw-bold">Шпаргалка пилота</h1>
+
+                </div>
+                <p class="col-md-10 fs-4">Этот сайт поможет тебе в освоении авиационоого мира. В нем описана вся нажная
+                    на
+                    начальном этапе теория. Здесь ты сможешь нати интересную статью про выполнение полетов на тренажере
+                    Cessna
+                    172sp, пошаговую инструкцию, которая поможет тебе в освоении мира IVAO и многое другое...
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col">
+                <a href="./pages/GettingReadyToFly.html" class="text-decoration-none">
+                    <div class="card card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Готовимся лететь</h5>
+                            <p class="card-text">Все про тренажер, о том как на нем леать, как подготовится к полету и
+                                как
+                                разговаривать с дисетчерами</p>
+                            <img src="./img/постр 2.1.jpg" class="card-img-bottom" alt="Готовимся лететь">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./pages/CesnaProcess.html" class="text-decoration-none">
+                    <div class="card card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Важная теория</h5>
+                            <p class="card-text">Вся теоретическая часть простым языком и нужные шапаргалки, которое
+                                очень
+                                тебе
+                                помогут</p>
+                            <img src="./img/003_006.jpg" class="card-img-bottom" alt="Важная теория">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
