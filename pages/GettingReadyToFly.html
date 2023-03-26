@@ -1,100 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.108.0">
-  <title>Album example · Bootstrap v5.3</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+  <meta name="author" content="Kruglov Alexandr, German Grachev and Bootstrap contributors">
+  <link rel="icon" href="../favicon.ico">
+  <title>Шпаргалка для пилота</title>
+  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="../styles/site.css" rel="stylesheet">
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
 
+<body>
 
-
-
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <header>
-    <div class=" mb-2 bg-primary text-white">
-      <div class="">
-        <div class="container">
-          <div class="mx-auto" style="width: 190px;">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-              <img src="../img/172.png" width="220" height="70" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
-              <path
-                d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
-              </img>
-            </a>
-          </div>
-        </div>
+  <header class="my-4 bg-primary">
+    <div class="container py-4">
+      <div class="d-flex align-items-center">
+        <img height="50" src="../img/logo_white.png" />
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mx-3 my-1 fs-4">
+            <li class="breadcrumb-item"><a class="link-light" href="/">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><span class="fw-bold">Готовимся лететь</span></li>
+          </ol>
       </div>
     </div>
-    </div>
-
   </header>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+  <div class="container py-4">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="../img/диспетчер.jpg" width="420" height="290" fill="currentColor" class="bi bi-airplane"
-              viewBox="0 0 16 16" border-radius="50px">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card card-hover h-100">
+            <img src="../img/диспетчер.jpg" class="card-img-top" alt="Полет с диспетчером">
             <div class="card-body">
-              <div class="col-lg-6 col-md-8 mx-auto">
-              </div>
-              <h6>Полет с диспетчером</h6>
-              <p class="card-text">О том как правильно общаться с диспетчером, основные правила радио-переговоров с
+              <h5 class="card-title">Полет с диспетчером</h5>
+              <p class="card-text"> том как правильно общаться с диспетчером, основные правила радио-переговоров с
                 диспечером и удобная шпаргалка со сложными словами.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Перейти</button>
-
-                </div>
-
-              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="../img/круг.jpg" width="420" height="290" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+        </a>
+
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card card-hover h-100">
+            <img src="../img/круг.jpg" class="card-img-top" alt="Аэродромный круг">
             <div class="card-body">
-              <h6>Аэродромный круг</h6>
+              <h5 class="card-title">Аэродромный круг</h5>
               <p class="card-text">Каждый пилот начинает свою летную карьеру с аэродромного круга. Этот раздел с
-                основыными правилами и лайфхаками выполнения аэродромного круга</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Перейти</button>
-
-                </div>
-
-              </div>
+                основыными правилами и лайфхаками выполнения аэродромного круга.</p>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="../img/aviatrenazher.jpg" width="420" height="290" fill="currentColor" class="bi bi-airplane"
-              viewBox="0 0 16 16" border-radius="50px">
+        </a>
+
+      </div>
+      <div class="col">
+        <a href="./CesnaProcess.html" class="text-decoration-none">
+          <div class="card card-hover h-100">
+            <img src="../img/aviatrenazher.jpg" class="card-img-top" alt="Подготовка кабины">
             <div class="card-body">
-              <h6>Подготовка кабины</h6>
+              <h5 class="card-title">Подготовка кабины</h5>
               <p class="card-text">Для того что бы подняться в небо необхадимо - подготовить воздушное судно к полету.
                 Эта статья о том как правильно подготовить Cessna 172 к полету и произвести запуск и настройку всех
-                приборов</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="../pages/CesnaProcess.html" button type="button" class="btn btn-sm btn-outline-secondary">Перейти</a>
-
-                </div>
-
-              </div>
+                приборов.</p>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
